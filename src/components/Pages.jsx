@@ -14,7 +14,7 @@ import rec1 from '../assets/recording/Rec_1.png'
 import rec2 from '../assets/recording/Rec_2.png'
 import rec3 from '../assets/recording/Rec_3.png'
 
-const pages = () => {
+const Pages = () => {
 
     const myRecObject = [
         {
@@ -275,7 +275,7 @@ const pages = () => {
                         <Typography sx={{ fontWeight: '600', fontSize: '20px', lineHeight: '24px' }}>Recent Recordings</Typography>
                         <Typography sx={{ fontSize: '16px', lineHeight: '24px', cursor: 'pointer' }}><Link sx={{ color: '#3C3C3C' }}>View All</Link></Typography>
                     </Container>
-                    <Stack direction='row' spacing={2}>
+                    <Stack direction='row' spacing={2} sx={{width:'1052px',overflow:'auto'}}>
                         {myRecObject.map((item, index) => (
                             <Box key={index} sx={{ width: 300, height: 300, backgroundColor: '#fff', padding: 2, margin: 2 , border:'1px solid #E5E5E5',height:'237px',borderRadius:'4px'}}>
                                 <Image src={item.image} alt={item.title} width={300} height={200} style={{marginBottom:'5px'}} />
@@ -290,4 +290,4 @@ const pages = () => {
     )
 }
 
-export default pages
+export default Pages

@@ -9,7 +9,7 @@ import MyTable from '../components/Table'
 export default function Home() {
   return (
     <div className="w-screen h-screen bg-gray-100 flex justify-center items-center">
-      <MyTable />
+      <Recipe_card />
     </div>
   );
 }

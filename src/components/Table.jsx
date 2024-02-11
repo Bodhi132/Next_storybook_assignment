@@ -37,7 +37,7 @@ const MyTable = ({data}) => {
             <Table sx={{ minWidth: 650, border: 'none' }} aria-label="simple table">
                 <TableHead >
                     <TableRow sx={{ backgroundColor: '#F3F3F3' }}>
-                        {Object.keys(data).map((key) => (
+                        {Object?.keys(data).map((key) => (
                             <TableCell style={key === 'Action' ? { paddingLeft:'4rem' } : {}}>{key}</TableCell>
                         ))}
                     </TableRow>
