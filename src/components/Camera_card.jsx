@@ -9,7 +9,7 @@ import graph from '../assets/camera_card_comp/graph.png'
 import trash from '../assets/camera_card_comp/trash.png'
 import recorder from '../assets/camera_card_comp/recorder.png'
 
-const Camera_card = () => {
+const Camera_card = ({activeColor = '#00DB4ADE' }) => {
   return (
     <Container sx={{ height: '430px', width: '340px', backgroundColor: 'white', position: 'relative',display:'flex',justifyContent:'center',borderRadius:'12px'}}>
       <Box sx={{height:'240px',width:'340px',position:'absolute'}}>
@@ -30,7 +30,7 @@ const Camera_card = () => {
           <Typography sx={{fontSize:'13px',color:'#757575'}}>Coimbatore branch</Typography>
         </Stack>
       <Container sx={{display:'flex',width:'100%',justifyContent:'space-between',padding:'0'}}>
-        <Box sx={{height:'25px',padding:'4px 8px 4px 8px',backgroundColor:'#00DB4ADE',borderRadius:'4px',fontSize:'12px',fontWeight:'600',color:'white'}}>Active</Box>
+        <Box sx={{height:'25px',padding:'4px 8px 4px 8px',backgroundColor: activeColor,borderRadius:'4px',fontSize:'12px',fontWeight:'600',color:'white'}}>Active</Box>
         <Stack direction='row' spacing={2} sx={{width:'92px',paddingTop:'1px',paddingBottom:'2px'}}>
           <Image src={trash} height={18} width={16} />
           <Image src={recorder} height={18} width={20}/>
