@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "build-storybook -s public -c .storybook -o storybook-static"
+    "build-storybook": "build-storybook -s public "
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
