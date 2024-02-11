@@ -19,5 +19,5 @@ jobs:
         # Options required for Chromatic's GitHub Action
         with:
           #👇 Chromatic projectToken, see https://storybook.js.org/tutorials/intro-to-storybook/svelte/en/deploy/ to obtain it
-          projectToken: ${{ chpt_8914b3eacbe8ccf}}
+          projectToken: ${{ secrets.chpt_8914b3eacbe8ccf }}
           token: ${{ secrets.GITHUB_TOKEN }}
