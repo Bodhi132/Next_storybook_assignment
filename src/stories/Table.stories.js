@@ -1,14 +1,19 @@
-// Import your table component
+import React from 'react';
+
 import MyTable from '../components/Table'
 
-// Default export containing title, component and argTypes
 export default {
   title: 'MyTable',
   component: MyTable,
+  argTypes: {
+    handleEdit: { action: 'edited' },
+    handleDelete: { action: 'deleted' }
+  }
 };
 
-// Named export for each story
-export const Default = (args) => <MyTable {...args} />;
+const Template = (args) => <MyTable {...args} />;
+
+export const Default = Template.bind({});
 Default.args = {
   data: {
     'Name': ['Peter John', 'Lingan', 'Adam', 'Smith', 'John Abraham'],
@@ -19,11 +24,5 @@ Default.args = {
     'Permissions': ['All Permissions', '3 Permissions', '6 Permissions', '5 Permissions', '2 Permissions'],
     'Status': ['Active', 'Active', 'Active', 'Active', 'Inactive'],
     'Action': []
-  },
-  handleEdit: (index) => {
-    console.log(`Edit action for index ${index}`);
-  },
-  handleDelete: (index) => {
-    console.log(`Delete action for index ${index}`);
   },
 };
