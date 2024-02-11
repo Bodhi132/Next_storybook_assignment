@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Pages from "@/components/Pages";
-import Charts from "@/components/Charts";
-import Camera_card from "@/components/Camera_card";
-import Recipe_card from "@/components/Recipe_card";
-import Forms from "@/components/forms";
-import MyTable from '../components/Table'
+import Pages from "@/stories/components/Pages";
+import Charts from "@/stories/components/Charts";
+import Camera_card from "@/stories/components/Camera_card";
+import Recipe_card from "@/stories/components/Recipe_card";
+import Forms from "@/stories/components/forms";
+import MyTable from '../stories/components/Table'
 
 export default function Home() {
   return (

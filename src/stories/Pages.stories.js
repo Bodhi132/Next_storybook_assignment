@@ -1,6 +1,6 @@
 // Import the necessary modules
 import React from 'react';
-import Pages from '../components/Pages'
+import Pages from './components/Pages'
 
 // Define the default metadata for your component
 export default {

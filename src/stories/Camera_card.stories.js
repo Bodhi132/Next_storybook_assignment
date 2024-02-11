@@ -11,7 +11,7 @@
 //     const inactiveColor = '#FF0000';
 //     return <Camera_card activeColor={inactiveColor} />;
 //   });
-import Camera_card from '../components/Camera_card'
+import Camera_card from './components/Camera_card'
 
 export default {
   title: 'Camera_card',

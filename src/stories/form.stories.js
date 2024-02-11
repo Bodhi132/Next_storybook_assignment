@@ -1,4 +1,4 @@
-import Forms from '../components/forms'
+import Forms from './components/forms'
 
 export default {
   title: 'Forms',

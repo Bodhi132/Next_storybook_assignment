@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MyTable from '../components/Table'
+import MyTable from './components/Table'
 
 export default {
   title: 'MyTable',
